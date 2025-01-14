@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+psycopg2-binary
+sqlalchemy
+python-multipart
+marshmallow
+marshmallow-sqlalchemy
+python-dotenv
+pydantic-settings
+pydantic
+alembic
+sqlalchemy
+asyncpg
