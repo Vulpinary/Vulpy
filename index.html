@@ -1,40 +1,21 @@
-<!-- HTML for static distribution bundle build -->
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Swagger UI</title>
-    <link rel="stylesheet" type="text/css" href="./swagger-ui.css">
-    <link rel="stylesheet" type="text/css" href="./index.css">
-
-</head>
-
-<body>
-    <div id="swagger-ui"></div>
-    <script src="./swagger-ui-bundle.js"></script>
-    <script src="./swagger-ui-standalone-preset.js"></script>
-    <script>
-        window.onload = function () {
-            // Begin Swagger UI call:
-            const ui = SwaggerUIBundle({
-               url: '/openapi.json',  // Change this if your OpenAPI URL is different
-                dom_id: '#swagger-ui',
-                presets: [
-                    SwaggerUIBundle.presets.apis,
-                    SwaggerUIStandalonePreset
-                ],
-                //Add any other configurations you might want here
-                 // Example: to collapse all the definitions
-                  //   docExpansion: "none"
-                   //To show only the first tag expanded by default.
-                   //tagsSorter : 'alpha',
-                   //operationsSorter: 'alpha',
-            });
-            window.ui = ui;
-        };
-    </script>
-</body>
-
-</html>
+     <!DOCTYPE html>
+     <html lang="en">
+     <head>
+       <meta charset="utf-8" />
+       <link rel="icon" href="./favicon.ico" />
+       <meta name="viewport" content="width=device-width, initial-scale=1" />
+       <meta name="theme-color" content="#000000" />
+       <meta
+         name="description"
+         content="Web site created using create-react-app"
+       />
+       <link rel="apple-touch-icon" href="./logo192.png" />
+       <link rel="manifest" href="./manifest.json" />
+       <title>React App</title>
+       <base href="/Vulpy/"> <!-- Change the base tag-->
+     </head>
+     <body>
+       <noscript>You need to enable JavaScript to run this app.</noscript>
+       <div id="root"></div>
+     </body>
+     </html>
