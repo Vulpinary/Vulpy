@@ -51,49 +51,11 @@
                                 }
                             }
                         }
-                    },
-                    "/users/{id}": {
-                        get: {
-                            summary: "Get a user by ID",
-                            parameters: [
-                                {
-                                    name: "id",
-                                    in: "path",
-                                    required: true,
-                                    description: "ID of the user to retrieve",
-                                    schema: {
-                                        type: "integer"
-                                    }
-                                }
-                            ],
-                            responses: {
-                                "200": {
-                                    description: "User details",
-                                    content: {
-                                        "application/json": {
-                                            schema: {
-                                                type: "object",
-                                                properties: {
-                                                    id: { type: "integer" },
-                                                    username: { type: "string" },
-                                                    name: { type: "string" },
-                                                    email: { type: "string" },
-                                                    is_active: { type: "boolean" }
-                                                }
-                                            }
-                                        }
-                                    }
-                                },
-                                "404": {
-                                    description: "User not found"
-                                }
-                            }
-                        }
                     }
                 }
             };
 
-            // Инициализация Swagger UI с использованием встроенной спецификации
+            // Инициализация Swagger UI
             window.ui = SwaggerUIBundle({
                 spec,
                 dom_id: '#swagger-ui',
@@ -107,25 +69,9 @@
                 ],
                 layout: 'StandaloneLayout'
             });
-
-            // Если вы хотите добавить возможность загрузки из файла swagger.yaml:
-            /*
-            window.ui = SwaggerUIBundle({
-                url: 'swagger.yaml',  // Укажите путь к вашему файлу YAML
-                dom_id: '#swagger-ui',
-                deepLinking: true,
-                presets: [
-                    SwaggerUIBundle.presets.apis,
-                    SwaggerUIStandalonePreset
-                ],
-                plugins: [
-                    SwaggerUIBundle.plugins.DownloadUrl
-                ],
-                layout: 'StandaloneLayout'
-            });
-            */
         };
     </script>
 </body>
 </html>
+
 
