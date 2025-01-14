@@ -1,4 +1,4 @@
- url: "https://vulpinary.github.io/Vulpy/",
+ url: "https://vulpinary.github.io/Vulpy/openapi.json",
   dom_id: '#swagger-ui',
   deepLinking: true,
   presets: [
@@ -8,7 +8,7 @@
      layout: "StandaloneLayout",
   customOptions: {
     swaggerUi: {
-       url: "https://vulpinary.github.io/Vulpy/",
+       url: "https://vulpinary.github.io/Vulpy/openapi.json",
         dom_id: '#swagger-ui',
         deepLinking: true,
         presets: [
